@@ -1,4 +1,4 @@
-package com.hao.composedemo01.ui.theme
+package com.hao.composedemo01.theme
 
 import android.app.Activity
 import android.content.Context
@@ -13,10 +13,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavController
 import com.hao.composedemo01.R
 
 private val DarkColorPalette = darkColors(
@@ -80,7 +78,7 @@ fun SetTopBar(context: Context, title: String) {
                 }
         )
         Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxWidth()) {
-            Text(text = title, fontSize = 18.sp, color = Color.White)
+            Text(text = title, fontSize = 18.sp, color = White)
         }
     }
 }

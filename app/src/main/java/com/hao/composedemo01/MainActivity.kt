@@ -28,7 +28,8 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.ExperimentalUnitApi
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.hao.composedemo01.ui.theme.ComposeDemo01Theme
+import com.hao.composedemo01.ui.page.ListActivity
+import com.hao.composedemo01.theme.ComposeDemo01Theme
 
 class MainActivity : ComponentActivity() {
     @ExperimentalUnitApi
@@ -74,6 +75,7 @@ fun Greeting(context: Context) {
                     println("我是一个拼接的文本")
                 })
         Spacer(modifier = Modifier.height(20.dp))
+
         ScrollableTabRow()
 
         Spacer(modifier = Modifier.height(20.dp))
@@ -98,7 +100,7 @@ fun Greeting(context: Context) {
 @Preview(showBackground = true)
 fun ScrollableTabRow() {
     var state = remember { mutableStateOf(0) }
-    val titles = listOf("标签1", "标签2", "标签3", "标签4", "这是很长的标签5")
+    val titles = listOf("标签1", "标签2", "标签3", "标签4", "标签4", "标签5", "标签6", "标签7")
     Column {
         ScrollableTabRow(
             selectedTabIndex = state.value,

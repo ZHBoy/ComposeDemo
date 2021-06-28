@@ -1,4 +1,4 @@
-package com.hao.composedemo01.ui.theme
+package com.hao.composedemo01.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

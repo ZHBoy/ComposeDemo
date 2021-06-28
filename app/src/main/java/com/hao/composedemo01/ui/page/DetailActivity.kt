@@ -1,4 +1,4 @@
-package com.hao.composedemo01
+package com.hao.composedemo01.ui.page
 
 import android.content.Context
 import android.os.Bundle
@@ -15,9 +15,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.sp
 import com.hao.composedemo01.data.UserInfoData
-import com.hao.composedemo01.ui.theme.ComposeDemo01Theme
-import com.hao.composedemo01.ui.theme.SetTopBar
+import com.hao.composedemo01.theme.ComposeDemo01Theme
+import com.hao.composedemo01.theme.SetTopBar
 
+/**
+ * 列表详情页
+ */
 class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
