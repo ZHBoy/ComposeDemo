@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ComposeDemo01</string>
+    <string name="title_home">首页</string>
+    <string name="title_recommend">推荐</string>
+    <string name="title_square">广场</string>
+    <string name="title_user">我的</string>
 </resources>
