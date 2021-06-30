@@ -58,14 +58,11 @@ class MainActivity : AppCompatActivity() {
 
 //        //设置一个侦听器，该侦听器在选择底部导航项时将得到通知。除非还设置了{@link OnNavigationItemReselectedListener}，否则当重新选择当前选择的项目时，也会通知此侦听器。
         bottomNaviView?.setOnNavigationItemSelectedListener { item ->
-            myViewPager2?.currentItem =
-                map[item] ?: error("BottomNavigationView的Item${item.itemId}没有对应的元素")
+            myViewPager2?.setCurrentItem(
+                map[item] ?: error("BottomNavigationView的Item${item.itemId}没有对应的元素"), false
+            )
             true
         }
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        return Navigation.findNavController(this, R.id.nav_home).navigateUp()
     }
 
 }
